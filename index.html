@@ -136,6 +136,42 @@
           </div>
         </div>
       </div>
+
+      <!-- my keyboards -->
+      <section id="my-keyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Keyboards</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Keychron K2</h4>
+                <img src="img/keyboards/3.png" alt="keychcron k3" class="keyboard-img">
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Womier RGB</h4>
+                <img src="img/keyboards/1.png" alt="womier rgb" class="keyboard-img">
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Red Dragon</h4>
+                <img src="img/keyboards/2.png" alt="red dragon" class="keyboard-img">
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- akhir my keyboards -->
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -319,6 +355,17 @@
         console.log('Success!', response)})
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+
+  <!-- script titl js -->
+  <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+		max: 35,
+		speed: 400,
+    glare: true
+	});
+
 </script>
   </body>
 </html>
